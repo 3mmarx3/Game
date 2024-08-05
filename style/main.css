@@ -38,7 +38,7 @@ body {
 
 .container {
   background-color: #1a1b1f;
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100%;
   display: flex;
   box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
@@ -148,9 +148,9 @@ main {
   color: white;
 }
 
-.top i {
-  width: 40px;
-  height: 40px;
+.top svg {
+  width: 20px;
+  height: 20px;
   display: grid;
   place-items: center;
   border-radius: 50%;
@@ -158,11 +158,11 @@ main {
   cursor: pointer;
 }
 
-.top .fa-bars {
+.top svg#hamburger {
   display: none;
 }
 
-.top i:hover {
+.top svg:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -268,7 +268,7 @@ header h1 {
 }
 
 .game-image-container {
-  height: 150px;
+  height: 25vh;
   width: 100%;
   overflow: hidden;
   border-radius: 10px;
@@ -373,6 +373,10 @@ aside {
 /* ------------------media query--------------------- */
 
 @media (max-width: 1200px) {
+  .container {
+    display: block;
+  }
+
   aside {
     position: absolute;
     inset: 0;
@@ -408,11 +412,15 @@ aside {
   aside.active {
     opacity: 1;
   }
+  aside.active {
+    position: fixed;
+    width: 100%;
+  }
   .top {
     width: 30%;
     z-index: 4000;
   }
-  .top .fa-bars {
+  .top svg#hamburger {
     display: grid;
   }
 }
@@ -433,8 +441,8 @@ aside {
 @media (max-width: 768px) {
   .search {
     min-width: 0;
-    width: 50px;
-    height: 50px;
+    width: 60%;
+    height: 40px;
     padding-left: 17px;
     overflow: hidden;
     cursor: pointer;
