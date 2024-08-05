@@ -153,17 +153,12 @@ main {
   height: 20px;
   display: grid;
   place-items: center;
-  border-radius: 50%;
   position: relative;
   cursor: pointer;
 }
 
 .top svg#hamburger {
   display: none;
-}
-
-.top svg:hover {
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
 header {
@@ -375,6 +370,17 @@ aside {
 @media (max-width: 1200px) {
   .container {
     display: block;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+  }
+
+  ._block {
+    margin-top: 15vh;
   }
 
   aside {
