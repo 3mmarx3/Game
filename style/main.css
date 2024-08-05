@@ -367,7 +367,81 @@ aside {
 
 /* ------------------media query--------------------- */
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
+  header {
+    padding: 30px 20px;
+  }
+  header h1 {
+    width: 70%;
+    position: relative;
+    z-index: 2;
+  }
+  .spiderman-img {
+    width: 300px;
+  }
+  .search {
+    min-width: 0;
+    width: 60%;
+    height: 40px;
+    padding-left: 17px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: width 0.2s linear;
+  }
+  .right-main {
+    padding: 1rem;
+  }
+  .search.active {
+    width: 50%;
+  }
+  .top {
+    width: auto;
+    gap: 0.5rem;
+  }
+  .main-flex {
+    height: 100%;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    overflow: auto;
+  }
+  .most-played {
+    height: 39%;
+    overflow: auto;
+  }
+
+  .most-played::-webkit-scrollbar {
+    display: none;
+  }
+  .games-card {
+    margin-bottom: 20px;
+  }
+
+  .main-flex {
+    height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .spiderman-img {
+    top: 0;
+    right: -50px;
+  }
+
+  .right-main {
+    padding: 30px 20px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .main-flex::-webkit-scrollbar {
+    display: none;
+  }
+  .most-played {
+    height: max-content;
+  }
   .container {
     display: block;
   }
@@ -428,86 +502,5 @@ aside {
   }
   .top svg#hamburger {
     display: grid;
-  }
-}
-
-@media (max-width: 1000px) {
-  header {
-    padding: 30px 20px;
-  }
-  header h1 {
-    width: 70%;
-    position: relative;
-    z-index: 2;
-  }
-  .spiderman-img {
-    width: 300px;
-  }
-}
-@media (max-width: 768px) {
-  .search {
-    min-width: 0;
-    width: 60%;
-    height: 40px;
-    padding-left: 17px;
-    overflow: hidden;
-    cursor: pointer;
-    transition: width 0.2s linear;
-  }
-  .right-main {
-    padding: 1rem;
-  }
-  .search.active {
-    width: 50%;
-  }
-  .top {
-    width: auto;
-    gap: 0.5rem;
-  }
-  .main-flex {
-    height: 100%;
-  }
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    overflow: auto;
-  }
-  .most-played {
-    height: 39%;
-    overflow: auto;
-  }
-
-  .most-played::-webkit-scrollbar {
-    display: none;
-  }
-  .games-card {
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .main-flex {
-    height: 80%;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-  .spiderman-img {
-    top: 0;
-    right: -50px;
-  }
-
-  .right-main {
-    padding: 30px 20px;
-  }
-
-  nav {
-    display: none;
-  }
-
-  .main-flex::-webkit-scrollbar {
-    display: none;
-  }
-  .most-played {
-    height: max-content;
   }
 }
