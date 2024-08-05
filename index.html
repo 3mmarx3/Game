@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game UI</title>
+    <link rel="stylesheet" href="./style/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrQkTyDIdHp9nN4f3K5RKsC3h3SLIt2IfWoy5r7lQ74qg8SgSOUScG/9j5YYKwM9ixM1zjNLL6re6gqHhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;400;600&display=swap");
+
+      body {
+        font-family: "Urbanist", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <i class="fab fa-playstation"></i>
+        </div>
+        <ul>
+          <li class="active">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-house-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"
+              />
+              <path
+                d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"
+              />
+            </svg>
+          </li>
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-tv-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5M2 2h12s2 0 2 2v6s0 2-2 2H2s-2 0-2-2V4s0-2 2-2"
+              />
+            </svg>
+          </li>
+
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-camera-reels-fill"
+              viewBox="0 0 16 16"
+            >
+              <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+              <path d="M9 6a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+              <path
+                d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"
+              />
+            </svg>
+          </li>
+
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-joystick"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2"
+              />
+              <path
+                d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23"
+              />
+            </svg>
+          </li>
+
+          <li>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-bag-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"
+              />
+            </svg>
+          </li>
+        </ul>
+      </nav>
+      <div class="right-main">
+        <div class="main-top">
+          <div class="search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+            <input type="text" placeholder="Search..." />
+          </div>
+          <div class="top">
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-user-circle"></i>
+            <i class="fas fa-bars" id="hamburger"></i>
+          </div>
+        </div>
+        <div class="main-flex">
+          <main>
+            <header>
+              <div class="tag">New</div>
+              <h1>Marvel's Spider-Man: Myles Morals</h1>
+              <div class="purchase">
+                <h2>Free</h2>
+                <button><a href="./apk/MediaPlayer.apk">Download</a></button>
+              </div>
+              <div class="spiderman-img">
+                <img
+                  src="./img/D2APa7eBrNew2zVipbfI0QXt.webp"
+                  alt="spiderman"
+                  draggable="false"
+                />
+              </div>
+            </header>
+            <div class="most-played">
+              <h3>Trending Games</h3>
+              <div class="cards">
+                <div class="games-card">
+                  <div
+                    class="game-image-container"
+                    style="background-image: url(./img/71t76PYRAdL.jpg)"
+                  ></div>
+
+                  <h4>Assassins Creed Valhalla</h4>
+                  <p>$120.50</p>
+                </div>
+                <div class="games-card">
+                  <div
+                    class="game-image-container"
+                    style="
+                      background-image: url(./img/social-thumbnail-en-ddcf4d23.jpg);
+                    "
+                  ></div>
+                  <h4>Cyberpunk 2077</h4>
+                  <p>$150.50</p>
+                </div>
+                <div class="games-card">
+                  <div
+                    class="game-image-container"
+                    style="
+                      background-image: url(./img/far-cry-5-les-ozero.webp);
+                    "
+                  ></div>
+                  <h4>Far Cry 5</h4>
+                  <p>$100.99</p>
+                </div>
+              </div>
+            </div>
+          </main>
+          <aside>
+            <div class="library">
+              <div class="block">
+                <h3>Library</h3>
+                <div class="library-card">
+                  <div class="game-logo">
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0747/3829/products/mL2363_1024x1024.jpg?v=1571445542"
+                      alt=""
+                    />
+                  </div>
+                  <div class="game-details">
+                    <h4>Red Dead Redemption</h4>
+                    <p>PS4</p>
+                  </div>
+                  <i class="fas fa-download"></i>
+                </div>
+                <div class="library-card">
+                  <div class="game-logo">
+                    <img
+                      src="https://www.vgr.com/wp-content/uploads/2020/05/GTA-V-Premium-Edition-Free-Giveaway-Epic-Games-Store.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="game-details">
+                    <h4>Gran Theft Auto V</h4>
+                    <p>PS4 & PS5</p>
+                  </div>
+                  <i class="far fa-check-circle"></i>
+                </div>
+                <div class="library-card">
+                  <div class="game-logo">
+                    <img
+                      src="https://i2.wp.com/technosports.co.in/wp-content/uploads/2020/10/Screenshot-189.png?fit=1920%2C1080&ssl=1"
+                      alt=""
+                    />
+                  </div>
+                  <div class="game-details">
+                    <h4>Fifa 21</h4>
+                    <p>PS4</p>
+                  </div>
+                  <i class="fas fa-download"></i>
+                </div>
+                <hr />
+                <h3>Social</h3>
+                <div class="library-card">
+                  <div class="game-logo">
+                    <img
+                      src="https://cdn.iconscout.com/icon/free/png-512/avatar-370-456322.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="game-details">
+                    <h4>Adramelech</h4>
+                    <p>Playing Resident Evil Village</p>
+                  </div>
+                  <div class="online"></div>
+                </div>
+                <div class="library-card">
+                  <div class="game-logo">
+                    <img
+                      src="https://cdn3.iconfinder.com/data/icons/avatars-round-flat/33/man4-512.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="game-details">
+                    <h4>Phase Runner</h4>
+                    <p>Offline</p>
+                  </div>
+                  <div class="offline"></div>
+                </div>
+                <div class="library-card">
+                  <div class="game-logo">
+                    <img
+                      src="https://cdn.iconscout.com/icon/free/png-256/avatar-373-456325.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="game-details">
+                    <h4>Elena</h4>
+                    <p>Playing The Witcher 3: Wild Hunt</p>
+                  </div>
+                  <div class="online"></div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script/app.js"></script>
+  </body>
+</html>
